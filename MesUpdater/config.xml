@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<MesAdministrator>
+	<Settings>
+		<dbconnectionstring>
+			<!--jdbc:oracle:thin:@192.168.2.12:1521:E1DATA-->
+			jdbc:mysql://192.168.4.199:3306/MES?useSSL=true
+		</dbconnectionstring>
+		<driver>
+			<!--oracle.jdbc.driver.OracleDriver-->
+			com.mysql.jdbc.Driver
+		</driver>
+		<dbuser>
+			<!--PRODDTA-->
+			<!--CRPDTA-->
+			admin
+			<!--root-->
+		</dbuser>
+		<importtojdeuser>
+			<!--PRODDTA-->
+			CRPDTA
+		</importtojdeuser>
+		<updateserverpath>
+			192.168.2.101\Mes_Update\MesAdministrator
+		</updateserverpath>
+		<application>
+			MesAdministrator.jar
+		</application>
+		<enablelog>
+			1
+			<!--0-->
+		</enablelog>
+	</Settings>
+</MesAdministrator>
